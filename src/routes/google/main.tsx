@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useRef } from "react";
 import styles from "./main.module.css";
 
 export const Route = createFileRoute("/google/main")({
