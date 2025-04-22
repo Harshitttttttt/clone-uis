@@ -1,0 +1,311 @@
+/* Variables */ :root {
+	--link-black-color: #1f1f1f;
+	--google-apps-background: #444746;
+
+	--blue: #0b57d0;
+	--white: #fff;
+	--grey: #f8f9fa;
+	--dark-grey: #dadce0;
+}
+
+/* Main Container */
+
+.main_container {
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	min-width: 100vw;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+/* Page Styles */
+a {
+	text-decoration: none;
+}
+
+/* Header */
+
+.header {
+	display: flex;
+	height: 60px;
+	width: 100%;
+	font-size: 13px;
+	padding: 6px;
+	justify-content: space-between;
+}
+
+/* .header {
+	position: relative;  Needed for absolute positioning of the pseudo-element 
+}
+
+.header::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: red;
+	transform: translateY(-50%); /* Adjust to perfectly center the line 
+	z-index: 10; /* Ensure the line is above other elements 
+} */
+
+.left_part {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+
+.right_part {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+
+/* About & Store */
+
+.about {
+	margin: 0 5px 0 15px;
+}
+
+.about_store {
+	display: flex;
+	/* padding: 5px; */
+	gap: 20px;
+}
+
+.about_store a {
+	text-decoration: none;
+	color: var(--link-black-color);
+}
+
+.about_store a:hover {
+	text-decoration: underline;
+}
+
+/* Gmail & Images Button Container */
+
+.gmail_images_container {
+	display: flex;
+	padding: 5px;
+	gap: 20px;
+}
+
+.gmail_images_container a {
+	text-decoration: none;
+	color: var(--link-black-color);
+}
+
+.gmail_images_container a:hover {
+	text-decoration: underline;
+}
+
+.google_apps {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100px;
+	transition: background-color 0.2s ease;
+	/* background-color: red; */
+}
+
+.google_apps:hover {
+	background-color: rgba(60, 64, 67, 0.1);
+}
+
+.google_apps_icon {
+	width: 24px;
+	height: 24px;
+}
+
+/* Google Apps & Sign In Button Container */
+
+.app_sign_in_container {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	height: 100%;
+	padding: 5px;
+	gap: 10px;
+}
+
+/* Sign In Button */
+
+.sign_in_button {
+	padding: 7px;
+	border-radius: 100px;
+	color: var(--white);
+	background-color: var(--blue);
+	padding: 10px 24px;
+}
+
+.sign_in_button:hover {
+	opacity: 0.8;
+}
+
+/* Logo */
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 92px;
+}
+
+/* Search */
+
+.search {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 20px 0 20px;
+}
+
+.search_buttons {
+	display: flex;
+	padding: 18px 0;
+	font-size: 14px;
+}
+
+.search_buttons button {
+	margin: 11px 4px;
+	padding: 0 16px;
+	background-color: var(--grey);
+	border: 1px solid var(--grey);
+	transition: border 0.1s ease;
+	cursor: pointer;
+	border-radius: 4px;
+	user-select: none;
+	height: 36px;
+}
+
+.search_buttons button:hover {
+	border: 1px solid var(--dark-grey);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.search_bar {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	box-shadow: 0px 2px 8px 0px rgba(60, 64, 67, 0.25);
+	border-radius: 24px;
+	width: auto;
+	justify-content: center;
+	height: 46px;
+	align-items: center;
+	max-width: 584px;
+	width: 100%;
+}
+
+.search_bar:hover {
+	background: #fff;
+	box-shadow: 0 2px 8px 1px rgba(64, 60, 67, 0.24);
+	border-color: transparent;
+}
+
+.search_bar svg:hover {
+	cursor: pointer;
+}
+
+.search_textarea {
+	height: 100%;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	line-height: 22px;
+	border-bottom: 8px solid transparent;
+	padding-top: 11px;
+	flex: 100%;
+}
+
+.lens_icon {
+	padding: 0 14px 0 8px;
+}
+
+.mic_icon {
+	padding: 0 8px;
+}
+
+.search_icon {
+	padding: 0 14px;
+}
+
+/* Additional Languages */
+
+.additional_languages {
+	display: block;
+	font-size: small;
+	margin-bottom: 24px;
+	text-align: center;
+	width: 100%;
+}
+
+.additional_languages a {
+	padding: 0 3px;
+	text-decoration: none;
+}
+
+.additional_languages a:hover {
+	text-decoration: underline;
+}
+
+/* India */
+
+.country {
+	font-size: 15px;
+	padding: 15px 30px;
+	width: 100%;
+	background-color: #f7f8f9;
+	border-bottom: 1px solid var(--dark-grey);
+}
+
+/* Footer */
+
+.footer {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: #f7f8f9;
+	padding: 0 20px;
+	font-size: 15px;
+}
+
+.footer a {
+	color: var(--link-black-color);
+	text-decoration: none;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+}
+
+.footer .footerA {
+	display: flex;
+	flex-direction: row;
+	color: var(--link-black-color);
+	text-decoration: none;
+}
+
+.footer .footerA > * {
+	padding: 15px;
+}
+
+.footer .footerB {
+	display: flex;
+	flex-direction: row;
+	color: var(--link-black-color);
+}
+
+.footer .footerB > * {
+	padding: 15px;
+}
+
+/* Bottom Box */
+
+.bottom_box {
+	margin-top: auto;
+}
